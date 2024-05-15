@@ -1,5 +1,16 @@
+// src/pages/Projects.js
 import React from 'react';
+import styled from 'styled-components';
 import ProjectCard from '../components/ProjectCard';
+
+const Container = styled.div`
+  padding: 2rem;
+`;
+
+const Title = styled.h1`
+  font-size: 2rem;
+  margin-bottom: 1rem;
+`;
 
 function Projects() {
   const projects = [
@@ -16,12 +27,12 @@ function Projects() {
   ];
 
   return (
-    <div>
-      <h1>My Projects</h1>
+    <Container>
+      <Title>My Projects</Title>
       {projects.map((project, index) => (
         <ProjectCard key={index} {...project} />
       ))}
-    </div>
+    </Container>
   );
 }
 

@@ -1,12 +1,23 @@
+// src/pages/Contact.js
 import React from 'react';
+import styled from 'styled-components';
 import ContactForm from '../components/ContactForm';
+
+const Container = styled.div`
+  padding: 2rem;
+`;
+
+const Title = styled.h1`
+  font-size: 2rem;
+  margin-bottom: 1rem;
+`;
 
 function Contact() {
   return (
-    <div>
-      <h1>Contact Me</h1>
+    <Container>
+      <Title>Contact Me</Title>
       <ContactForm />
-    </div>
+    </Container>
   );
 }
 
